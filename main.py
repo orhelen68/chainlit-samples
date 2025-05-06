@@ -14,7 +14,7 @@ client = AsyncOpenAI(
 cl.instrument_openai()
 
 settings = {
-    "model": "google/gemini-2.0-flash-lite-001",
+    "model": "deepseek/deepseek-r1:free",
     "temperature": 0,
     # ... more settings
 }
@@ -24,7 +24,7 @@ async def on_message(message: cl.Message):
     response = await client.chat.completions.create(
         messages=[
             {
-                "content": "You are a helpful bot, you always reply in Traditional Chinese",
+                "content": "You are a helpful bot, always polite and act like a gentleman and you always reply in both English and Traditional Chinese",
                 "role": "system"
             },
             {
