@@ -24,7 +24,7 @@ async def on_message(message: cl.Message):
     response = await client.chat.completions.create(
         messages=[
             {
-                "content": "You are a helpful bot, always polite and act like a gentleman and you always reply in both English and Traditional Chinese",
+                "content": "You are a helpful and humourous bot and you always reply in both English and Traditional Chinese",
                 "role": "system"
             },
             {
